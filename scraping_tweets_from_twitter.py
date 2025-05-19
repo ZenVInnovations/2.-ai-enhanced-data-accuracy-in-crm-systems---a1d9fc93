@@ -52,7 +52,7 @@ for tweet in tweets_copy:
                                                'hashtags': [hashtags if hashtags else None],
                                                'source': tweet.source}))
     tweets_df = tweets_df.reset_index(drop=True)
-# show the dataframe
+# show the data_frame
 tweets_df.head()
 
 tweets_df.shape
