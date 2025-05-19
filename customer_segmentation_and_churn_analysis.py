@@ -73,10 +73,10 @@ df_segmentation_MonthsInService
 
 df_churn_prone_customers = df_segmentation_MonthsInService[df_segmentation_MonthsInService['MonthsInServiceCluster'] == 0]
 
-# 1st cluster: prone to churning
+# 1st cluster: prone to churningd
 df_churn_prone_customers
 
-dataset = df_churn_prone_customers
+dataset = df_churn_prone_customers #data set shape
 
 # dataset shape
 dataset.shape
@@ -113,7 +113,7 @@ for col in dataset.columns :
 binary_cols
 
 multi_Value
-
+# using label encoder for normalizing multi value columns
 # using label encoder for normalizing multi value columns
 from sklearn.preprocessing import LabelEncoder
 LE_cat = LabelEncoder()
